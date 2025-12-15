@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco-Interior Design | GreenLine Sustainable Ventures</title>
+    <link rel="shortcut icon" href="favicon_io/Greenline logo.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +60,7 @@
             padding: 0 40px;
         }
 
-        /* ===== ENHANCED HEADER ===== */
+        /* ===== HEADER - SAME AS PAGE 1 ===== */
         header {
             background: rgba(10, 41, 24, 0.95);
             backdrop-filter: blur(20px);
@@ -158,7 +159,7 @@
             margin-top: 2px;
         }
 
-        /* Desktop Navigation Enhancement */
+        /* Desktop Navigation - SAME AS PAGE 1 */
         .desktop-nav {
             display: flex;
             align-items: center;
@@ -254,7 +255,7 @@
             left: 100%;
         }
 
-        /* ===== ENHANCED MOBILE NAVIGATION ===== */
+        /* ===== MOBILE NAVIGATION - SAME AS PAGE 1 ===== */
         .mobile-toggle {
             display: none;
             flex-direction: column;
@@ -448,65 +449,6 @@
 
         .mobile-nav-links a.active i {
             color: var(--accent-gold);
-        }
-
-        /* Mobile CTA Button */
-        .mobile-cta-container {
-            margin-top: 30px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: slideUp 0.5s ease 0.5s forwards;
-        }
-
-        @keyframes slideUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .mobile-cta {
-            background: var(--gradient-gold);
-            color: var(--dark-bg);
-            border: none;
-            width: 100%;
-            padding: 1.3rem 2rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .mobile-cta::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: 0.7s;
-            z-index: -1;
-        }
-
-        .mobile-cta:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-        }
-
-        .mobile-cta:hover::before {
-            left: 100%;
         }
 
         /* ===== ENHANCED INTERIOR DESIGN HERO ===== */
@@ -1833,7 +1775,7 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header with same navigation as page 1 -->
     <header id="mainHeader">
         <div class="container header-content">
             <!-- Logo -->
@@ -1845,17 +1787,18 @@
                 </div>
             </a>
             
-            <!-- Desktop Navigation -->
+            <!-- Desktop Navigation - SAME AS PAGE 1 -->
             <div class="desktop-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="agric.html">Agriculture</a></li>
-                <li><a href="ads.html">Advertisement</a></li>
-                <li><a href="estate.html">Estate Mgt</a></li>
-                <li><a href="logistics.html">Logistics</a></li>
-                <li><a href="interior.html" class="active">Interior Mgt</a></li>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="agric.html">Agriculture</a></li>
+                    <li><a href="ads.html">Advertisement</a></li>
+                    <li><a href="estate.html">Estate Mgt</a></li>
+                    <li><a href="logistics.html">Logistics</a></li>
+                    <li><a href="interior.html" class="active">Interior Mgt</a></li>
                 </ul>
-                <button class="desktop-cta" id="consultation-btn-desktop">Free Consultation</button>
+                <!-- <button class="desktop-cta" id="consultation-btn-desktop">Free Consultation</button> -->
             </div>
             
             <!-- Mobile Menu Toggle -->
@@ -1872,8 +1815,8 @@
         <!-- Mobile Navigation Panel -->
         <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
             <a href="index.html" class="mobile-nav-logo">
-                <!-- <i class="fas fa-leaf logo-icon"></i>
-                <div class="logo-text">GreenLine</div> -->
+                <i class="fas fa-leaf logo-icon"></i>
+                <div class="logo-text">GreenLine</div>
             </a>
             
             <ul class="mobile-nav-links">
@@ -1907,10 +1850,10 @@
                 <h1>Transform Your Space with <span>Sustainable Elegance</span></h1>
                 <p class="hero-interior-subtitle">Creating beautiful, functional, and eco-friendly interiors that reflect your style while minimizing environmental impact. From concept to completion, we design spaces that inspire and endure.</p>
                 
-                <div class="hero-interior-buttons">
+                <!-- <div class="hero-interior-buttons">
                     <button class="desktop-cta" id="portfolio-btn">View Our Portfolio</button>
                     <button class="outline-button" id="design-consultation-btn">Schedule Design Consultation</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -1954,7 +1897,7 @@
                 </div>
                 
                 <div class="about-interior-visual">
-                    <img src="https://images.unsplash.com/photo-1615529182904-14819c35db37?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sustainable Interior Design">
+                    <img src="favicon_io/int 2.jpg" alt="Sustainable Interior Design">
                 </div>
             </div>
         </div>
@@ -2034,14 +1977,14 @@
             
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="residential">Residential</button>
+                <!-- <button class="filter-btn" data-filter="residential">Residential</button>
                 <button class="filter-btn" data-filter="commercial">Commercial</button>
-                <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+                <button class="filter-btn" data-filter="hospitality">Hospitality</button> -->
             </div>
             
             <div class="portfolio-grid">
                 <div class="portfolio-item" data-category="residential">
-                    <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Living Room">
+                    <img src="favicon_io/int 3.jpg" alt="Modern Living Room">
                     <div class="portfolio-overlay">
                         <h4>Eco-Friendly Family Home</h4>
                         <p>Residential | Port Harcourt</p>
@@ -2049,7 +1992,7 @@
                 </div>
                 
                 <div class="portfolio-item" data-category="commercial">
-                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern Office">
+                    <img src="favicon_io/int1.jpg" alt="Modern Office">
                     <div class="portfolio-overlay">
                         <h4>Sustainable Office Space</h4>
                         <p>Commercial | Lagos</p>
@@ -2057,14 +2000,14 @@
                 </div>
                 
                 <div class="portfolio-item" data-category="hospitality">
-                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hotel Lobby">
+                    <img src="favicon_io/int 4.jpg" alt="Hotel Lobby">
                     <div class="portfolio-overlay">
                         <h4>Boutique Hotel Lobby</h4>
                         <p>Hospitality | Abuja</p>
                     </div>
                 </div>
                 
-                <div class="portfolio-item" data-category="residential">
+                <!-- <div class="portfolio-item" data-category="residential">
                     <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sustainable Kitchen">
                     <div class="portfolio-overlay">
                         <h4>Eco-Conscious Kitchen Remodel</h4>
@@ -2078,15 +2021,15 @@
                         <h4>Green Conference Room</h4>
                         <p>Commercial | Ibadan</p>
                     </div>
-                </div>
+                </div> -->
                 
-                <div class="portfolio-item" data-category="hospitality">
+                <!-- <div class="portfolio-item" data-category="hospitality">
                     <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Restaurant Interior">
                     <div class="portfolio-overlay">
                         <h4>Sustainable Restaurant Design</h4>
                         <p>Hospitality | Port Harcourt</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -2134,10 +2077,10 @@
             <div class="cta-content">
                 <h2>Ready to Transform Your Space <span>Sustainably</span>?</h2>
                 <p>Let's collaborate to create an interior that reflects your style, meets your needs, and respects our planet. Our team is ready to bring your vision to life with sustainable design excellence.</p>
-                <div class="cta-buttons">
+                <!-- <div class="cta-buttons">
                     <button class="desktop-cta" id="cta-consultation-btn">Schedule Free Consultation</button>
                     <button class="outline-button" id="cta-portfolio-btn">View Full Portfolio</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -2324,7 +2267,7 @@
     </div>
 
     <script>
-        // Mobile Navigation System
+        // Mobile Navigation System - SAME AS PAGE 1
         document.addEventListener('DOMContentLoaded', function() {
             const mobileToggle = document.getElementById('mobileToggle');
             const mobileNav = document.getElementById('mobileNav');
@@ -2588,12 +2531,6 @@
                     formSuccess.style.display = 'block';
                     
                     // In a real application, you would send the form data to your server here
-                    // Example: 
-                    // fetch('/submit-consultation', {
-                    //     method: 'POST',
-                    //     headers: {'Content-Type': 'application/json'},
-                    //     body: JSON.stringify(formData)
-                    // })
                 }, 1500);
             });
             
@@ -2657,7 +2594,7 @@
                 return isValid;
             }
             
-            // Smooth scrolling for desktop navigation
+            // Smooth scrolling for desktop navigation - SAME AS PAGE 1
             document.querySelectorAll('.nav-links a').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
